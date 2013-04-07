@@ -1,0 +1,177 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 结果显示控件 -->
+    <EditText
+        android:id="@+id/result"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ellipsize="start"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="right|center"
+        android:hint=""
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:textSize="30dp" />
+    
+    <!-- 空白、清除 -->
+    <TableRow android:layout_weight="1">
+        <Button
+            android:id="@+id/blank1"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/blank2"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/blank3"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/clear"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickClearButton"
+            android:textSize="40dp"
+            android:text="@string/clear" />
+    </TableRow>
+    
+    <!-- 七(7)、八(8)、九(9)、除号(÷) -->
+    <TableRow android:layout_weight="1">
+        <Button
+            android:id="@+id/seven"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickSevenButton"
+            android:textSize="40dp"
+            android:text="@string/seven" />
+        <Button
+            android:id="@+id/eight"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickEightButton"
+            android:textSize="40dp"
+            android:text="@string/eight" />
+        <Button
+            android:id="@+id/nine"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickNineButton"
+            android:textSize="40dp"
+            android:text="@string/nine" />
+        <Button
+            android:id="@+id/divide"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="@string/divide" />
+    </TableRow>
+    
+    <!-- 四(4)、五(5)、六(6)、乘号(×) -->
+    <TableRow android:layout_weight="1">
+        <Button
+            android:id="@+id/four"
+            android:layout_height="match_parent"
+            android:onClick="clickFourButton"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="@string/four" />
+        <Button
+            android:id="@+id/five"
+            android:layout_height="match_parent"
+            android:onClick="clickFiveButton"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="@string/five" />
+        <Button
+            android:id="@+id/six"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickSixButton"
+            android:textSize="40dp"
+            android:text="@string/six" />
+        <Button
+            android:id="@+id/multiply"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="@string/multiply" />
+    </TableRow>
+
+    <!-- 壹(1)、二(2)、三(3)、减号(-) -->
+    <TableRow android:layout_weight="1">
+        <Button
+            android:id="@+id/one"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickOneButton"
+            android:textSize="40dp"
+            android:text="@string/one" />
+        <Button
+            android:id="@+id/two"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickTwoButton"
+            android:textSize="40dp"
+            android:text="@string/two" />
+        <Button
+            android:id="@+id/three"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickThreeButton"
+            android:textSize="40dp"
+            android:text="@string/three" />
+        <Button
+            android:id="@+id/subtract"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="@string/subtract" />
+    </TableRow>
+    
+    <!-- 冒号(:)、零(0)、等号(=)、加号(+) -->
+    <TableRow android:layout_weight="1">
+        <Button
+            android:id="@+id/colon"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickColonButton"
+            android:textSize="40dp"
+            android:text="@string/colon" />
+        <Button
+            android:id="@+id/zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickZeroButton"
+            android:textSize="40dp"
+            android:text="@string/zero" />
+        <Button
+            android:id="@+id/calculator"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickCalculateButton"
+            android:textSize="40dp"
+            android:text="@string/calculator" />
+        <Button
+            android:id="@+id/add"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickAddButton"
+            android:textSize="40dp"
+            android:text="@string/add" />
+    </TableRow>
+    
+</TableLayout>
